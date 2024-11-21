@@ -4,7 +4,7 @@
     {
       "name": "Bingsearch",
       "url": "http://localhost:3400/api/v2",
-      "description": "Bingsearch API",
+      "description": "Bingsearch——API",
       "parameters": {
         "properties": {
           "query": {
