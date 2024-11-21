@@ -1,10 +1,10 @@
 {
-  "name": "plugin-identifier",
+  "name": "Bingsearch-identifier",
   "version": "1.5.1",
   "private": true,
-  "description": "This is the plugin template for LobeChat plugin development",
-  "homepage": "https://github.com/lobehub/chat-plugin-template",
-  "repository": "https://github.com/lobehub/chat-plugin-template.git",
+  "description": "This is the plugin Bingsearch for LobeChat plugin development",
+  "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+  "repository": "https://github.com/FineHow/Bingsearch-Plugin.git",
   "workspaces": [
     "docs/*",
     "./*"
@@ -59,8 +59,8 @@
     "antd-style": "^3",
     "dayjs": "^1",
     "next": "13.4.7",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": ">=18",
+    "react-dom": ">=18",
     "react-layout-kit": "^1"
   },
   "devDependencies": {
@@ -79,7 +79,8 @@
     "remark": "^14",
     "remark-cli": "^11",
     "semantic-release": "^21",
-    "stylelint": "^15",
+    "stylelint": "^16.10.0",
+    "stylelint-config-recommended": "^14.0.1",
     "typescript": "^5",
     "vitest": "latest"
   },
