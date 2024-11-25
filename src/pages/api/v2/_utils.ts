@@ -1,13 +1,13 @@
 // import { Logo } from '@lobehub/ui';
 import { Result ,bingResults} from '../../type';
-import { settings } from './_types';
+import {  Settings } from './_types';
 import fetch from 'node-fetch';
 
 
 const BASE_URL = 'https://api.bing.microsoft.com/v7.0/search';
 
-const fetchResult = async (args: { query: string }): Promise<Result> => {
-  const apiKey = settings.BING_API_KEY;
+const fetchResult = async (args: { query: string },Setting:Settings): Promise<Result> => {
+  const apiKey = Setting.BING_API_KEY;
   const { default: querystring } = await import('query-string');
   console.log("APIKEY",apiKey);
   const params = {

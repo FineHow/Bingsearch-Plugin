@@ -21,6 +21,20 @@
   "createdAt": "2024-11-21",
   "gateway": "http://localhost:3400/api/gateway",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+  "settings": {
+    "type": "object",
+    "required": ["BING_API_KEY"],
+    "properties": {
+      "BING_API_KEY": {
+        "title": "Bing API Key",
+        "description": "we use [Bing_API]as backend service | 该插件使用 Bing_API 作为搜索服务",
+        "type": "string",
+        "minLength": 32,
+        "maxLength": 32,
+        "format": "password"
+      }
+    }
+  },
   "identifier": "Bingsearch-identifier",
   "meta": {
     "avatar": "🚀",
