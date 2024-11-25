@@ -2,7 +2,7 @@ import { Avatar } from '@lobehub/ui';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-import { SearchItem } from '../type';
+import { SearchItem } from '../../type';
 import { useStyles } from './style';
 
 const ListItem = memo<SearchItem>(({ link, title }) => {

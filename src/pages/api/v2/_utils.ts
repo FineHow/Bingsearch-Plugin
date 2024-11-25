@@ -1,7 +1,7 @@
 // import { Logo } from '@lobehub/ui';
 import fetch from 'node-fetch';
 
-import { Result, bingResults } from '../../type';
+import { Result, bingResults } from '../../../type';
 import { Settings } from './_types';
 
 const BASE_URL = 'https://api.bing.microsoft.com/v7.0/search';

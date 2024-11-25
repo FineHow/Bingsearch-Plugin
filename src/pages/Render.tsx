@@ -6,7 +6,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import GridItem from './components/GridItem';
 import ListItem from './components/ListItem';
-import { Result } from './type';
+import { Result } from '../type';
 
 const listRender = (item: any) => <ListItem {...item} />;
 const gridRender = (item: any) => <GridItem {...item} />;

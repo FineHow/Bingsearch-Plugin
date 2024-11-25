@@ -19,3 +19,5 @@ export const useStyles = createStyles(({ css, token }) => {
     `,
   };
 });
+
+export default useStyles;
