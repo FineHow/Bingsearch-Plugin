@@ -5,7 +5,7 @@ import { Flexbox } from 'react-layout-kit';
 import { SearchItem } from '../type';
 import { useStyles } from './style';
 
-const GridItem = memo<SearchItem>(({ content, link, title, }) => {
+const GridItem = memo<SearchItem>(({ content, link, title }) => {
   const { styles } = useStyles();
 
   return (

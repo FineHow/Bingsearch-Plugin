@@ -11,16 +11,15 @@ export interface SearchItem {
 
 export type Result = SearchItem[];
 
-
 interface bingResult {
   // id: string;
   name: string;
-  url: string;
   // datePublished: string;
   // datePublishedDisplayText: string;
   // isFamilyFriendly: boolean;
   // displayUrl: string;
   snippet: string;
+  url: string;
 }
 export type bingResults = bingResult[];
 

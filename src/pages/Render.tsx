@@ -20,7 +20,7 @@ const Render = memo<PluginRenderProps<Result>>(({ content }) => {
         <ActionIcon active={grid} icon={Grid3x3} onClick={() => setGrid(true)} />
       </Flexbox>
       <SpotlightCard
-        columns={grid ? 3: 1}
+        columns={grid ? 3 : 1}
         gap={grid ? 8 : 6}
         items={content}
         renderItem={grid ? gridRender : listRender}
@@ -30,5 +30,3 @@ const Render = memo<PluginRenderProps<Result>>(({ content }) => {
 });
 
 export default Render;
-
-

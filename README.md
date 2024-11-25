@@ -57,10 +57,10 @@ This is the plugin Bingsearch for LobeChat plugin development
 
 ## 🤯 Usage
 
-> [!IMPORTANT]\
+> \[!IMPORTANT]\
 > See detail on [📘 Bingsearch usage](https://chat-plugin-sdk.lobehub.com/guides/Bingsearch)
 
-> [!Note]\
+> \[!Note]\
 > Plugins provide a means to extend the [Function Calling][fc-link] capabilities of LobeChat. They can be used to introduce new function calls, and even new ways to render message results. If you are interested in plugin development, please refer to our [📘 Plugin Development Guide](https://github.com/lobehub/lobe-chat/wiki/Plugin-Development) in the Wiki.
 >
 > - [@lobehub/lobe-chat-plugins][lobe-chat-plugins]: This is the plugin index for LobeChat. It accesses index.json from this repository to display a list of available plugins for LobeChat to the user.

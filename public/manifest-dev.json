@@ -21,6 +21,13 @@
   "createdAt": "2024-11-21",
   "gateway": "http://localhost:3400/api/gateway",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+  "identifier": "Bingsearch-identifier",
+  "meta": {
+    "avatar": "🚀",
+    "tags": ["Bingsearch"],
+    "title": "Bing联网搜索",
+    "description": "基于bing搜索引擎的互联网搜索助手"
+  },
   "settings": {
     "type": "object",
     "required": ["BING_API_KEY"],
@@ -34,13 +41,6 @@
         "format": "password"
       }
     }
-  },
-  "identifier": "Bingsearch-identifier",
-  "meta": {
-    "avatar": "🚀",
-    "tags": ["Bingsearch"],
-    "title": "Bing联网搜索",
-    "description": "基于bing搜索引擎的互联网搜索助手"
   },
   "ui": {
     "url": "http://localhost:3400",
