@@ -11,6 +11,7 @@
 venv
 temp
 tmp
+.env
 
 # dependencies
 node_modules

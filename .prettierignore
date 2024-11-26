@@ -16,6 +16,7 @@ venv
 temp
 tmp
 LICENSE
+.env
 
 # dependencies
 node_modules
