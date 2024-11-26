@@ -19,7 +19,6 @@
   ],
   "author": "ZWL_FineHow",
   "createdAt": "2024-11-21",
-  "gateway": "http://localhost:3400/api/gateway",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
   "identifier": "Bingsearch-identifier",
   "meta": {
