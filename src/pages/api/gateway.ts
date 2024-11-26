@@ -9,5 +9,7 @@ export default async (req: Request) => {
     return createGatewayOnEdgeRuntime()(req);
   }
 
-  return new Response('gateway');
+  const { createGatewayOnEdgeRuntime } = await import('@lobehub/chat-plugins-gateway');
+
+    return createGatewayOnEdgeRuntime()(req);
 };
