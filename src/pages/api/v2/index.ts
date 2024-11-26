@@ -12,7 +12,7 @@ export const config = {
 };
 
 export default async (req: Request) => {
-  if (req.method !== 'POST') return createErrorResponse(PluginErrorType.MethodNotAllowed);
+  // if (req.method !== 'POST') return createErrorResponse(PluginErrorType.MethodNotAllowed);
 
   const settings = getPluginSettingsFromRequest<Settings>(req);
 
