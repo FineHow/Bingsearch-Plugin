@@ -11,10 +11,7 @@
 This is the plugin Bingsearch for LobeChat plugin development
 
 [![][🤯-🧩-lobehub-shield]][🤯-🧩-lobehub-link]
-[![][github-release-shield]][github-release-link]
-[![][github-releasedate-shield]][github-releasedate-link]
-[![][github-action-test-shield]][github-action-test-link]
-[![][github-action-release-shield]][github-action-release-link]<br/>
+[![][github-release-shield]
 [![][github-contributors-shield]][github-contributors-link]
 [![][github-forks-shield]][github-forks-link]
 [![][github-stars-shield]][github-stars-link]
@@ -38,16 +35,16 @@ This is the plugin Bingsearch for LobeChat plugin development
 - [🤝 Contributing](#-contributing)
 - [🔗 Links](#-links)
 
-####
+#### 
 
 </details>
 
 ## 🌟 Features
 
-- [x] 💨 **Quick start with low learning curve**: This Bingsearch provides a quick start option, allowing users to get started quickly. Additionally, the Bingsearch includes detailed documentation to help users understand and use the features easily.
-- [x] 📚 **Beautiful and comprehensive documentation**: The Bingsearch aims for aesthetics, with carefully designed interfaces and layouts that make the documentation more intuitive, readable, and user-friendly. Moreover, the Bingsearch offers a wide range of styles and components for users to customize the appearance and functionality of their documentation.
-- [x] 🔄 **Complete workflow, automatic publishing and partner updates**: The Bingsearch provides a complete workflow, including automatic publishing and automatic partner updates. Users can easily complete the publishing and updating tasks by following the specified steps.
-- [x] 🖱️ **One-click document generation**: The Bingsearch offers a one-click document generation feature, allowing users to quickly generate complete documentation with simple operations. This saves users a significant amount of time and effort, allowing them to focus on improving the content and quality of their documentation.
+- [X]  💨 **dev1里这是基于私有化部署的BINGSEARCH插件方案
+- [X]  📚 **只包含后端API，不包含前端UI的版本
+- [X]  🔄 **需要在私有化部署时自行添加环境变量BING_API，开发条件下，请自行替换默认api即可
+- [X]  **🖱️**在LOBECHAT中需要在db.ts中设置默认初始化插件，即可不需要通过插件市场，直接导入初始化BING使用，这里是只适用于私有化部署的方案！！！！
 
 <div align="right">
 
@@ -57,23 +54,13 @@ This is the plugin Bingsearch for LobeChat plugin development
 
 ## 🤯 Usage
 
-> \[!IMPORTANT]\
-> See detail on [📘 Bingsearch usage](https://chat-plugin-sdk.lobehub.com/guides/Bingsearch)
+需要在私有化部署时自行添加环境变量BING_API，开发条件下，请自行替换默认api即可
 
-> \[!Note]\
-> Plugins provide a means to extend the [Function Calling][fc-link] capabilities of LobeChat. They can be used to introduce new function calls, and even new ways to render message results. If you are interested in plugin development, please refer to our [📘 Plugin Development Guide](https://github.com/lobehub/lobe-chat/wiki/Plugin-Development) in the Wiki.
->
-> - [@lobehub/lobe-chat-plugins][lobe-chat-plugins]: This is the plugin index for LobeChat. It accesses index.json from this repository to display a list of available plugins for LobeChat to the user.
-> - [@lobehub/chat-plugin-sdk][chat-plugin-sdk]: The LobeChat Plugin SDK assists you in creating exceptional chat plugins for Lobe Chat.
-> - [@lobehub/chat-plugins-gateway][chat-plugins-gateway]: The LobeChat Plugins Gateway is a backend service that serves as a gateway for LobeChat plugins. We deploy this service using Vercel. The primary API POST /api/v1/runner is deployed as an Edge Function.
+在LOBECHAT中需要在db.ts中设置默认初始化插件，即可不需要通过插件市场，直接导入初始化BING使用，这里是只适用于私有化部署的方案！！！！下面展示私有化部署的lobechat中db.ts中的内容：
 
-| Official Plugin                                 | Description                                                                                                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SearchEngine][chat-plugin-search-engine]       | This plugin allows for the use of the SerpApi search engine.                                                                                      |
-| [RealtimeWeather][chat-plugin-realtime-weather] | This plugin provides practical weather information by obtaining real-time weather data and can automatically update based on the user's location. |
-| [WebsiteCrawler][chat-plugin-web-crawler]       | This plugin automatically crawls the main content of a specified URL webpage and uses it as context input.                                        |
+![1732604380340](images/README/1732604380340.png)
 
-<div align="right">
+这个链接https://github.com/FineHow/lobe-chat<div align="right">源码可以审阅（我空了git一下
 
 [![][back-to-top]](#readme-top)
 
@@ -91,9 +78,9 @@ Or clone it for local development:
 
 ```bash
 $ git clone https://github.com/FineHow/Bingsearch-Plugin.git
-$ cd chat-plugin-Bingsearch
-$ bun install
-$ bun dev
+$ cd Bingsearch-Plugin
+$ pnpm install
+$ pnpm dev
 ```
 
 <div align="right">
@@ -107,8 +94,6 @@ $ bun dev
 Contributions of all types are more than welcome, if you are interested in contributing plugin, feel free to show us what you’re made of.
 
 [![][pr-welcome-shield]][pr-welcome-link]
-
-[![][github-contrib-shield]][github-contrib-link]
 
 <div align="right">
 
