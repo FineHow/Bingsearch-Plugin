@@ -10,7 +10,7 @@
     "./*"
   ],
   "scripts": {
-    "build": "npm run docs:build && next build",
+    "build": "next build",
     "ci": "npm run lint && npm run type-check",
     "dev": "next dev -p 3400",
     "docs:build": "cd docs && npm run build",
@@ -18,13 +18,14 @@
     "lint": "eslint \"{src,api,docs}/**/*.{js,jsx,ts,tsx}\" --fix",
     "lint:md": "remark . --quiet --frail --output",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "prepare": "husky install",
     "prepublishOnly": "npm run build",
     "release": "semantic-release",
-    "start": "next build&&next start",
+    "start": "next build && next start",
     "test": "vitest --passWithNoTests",
     "test:coverage": "vitest --coverage  --passWithNoTests",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "install:prod": "npm install --omit=dev",  
+    "install:dev": "npm install" 
   },
   "lint-staged": {
     "*.md": [
@@ -58,8 +59,8 @@
     "antd-style": "^3",
     "dayjs": "^1",
     "next": "13.4.7",
-    "react": ">=18",
-    "react-dom": ">=18",
+    "react": "^18",
+    "react-dom": "^18",
     "react-layout-kit": "^1"
   },
   "devDependencies": {
@@ -78,8 +79,7 @@
     "remark": "^14",
     "remark-cli": "^11",
     "semantic-release": "^21",
-    "stylelint": "^16.10.0",
-    "stylelint-config-recommended": "^14.0.1",
+    "stylelint": "^15",
     "typescript": "^5",
     "vitest": "latest"
   },
