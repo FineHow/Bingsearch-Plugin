@@ -21,7 +21,7 @@
   "createdAt": "2024-11-21",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
   "identifier": "Bingsearch-identifier",
-  "gateway": "https://google-cse-lobechat.vercel.app/api/gateway",
+  "gateway": "https://bingsearch-plugin.vercel.app/api/gateway",
   "meta": {
     "avatar": "🚀",
     "tags": ["Bingsearch"],
