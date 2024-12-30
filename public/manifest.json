@@ -1,0 +1,36 @@
+{
+  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
+  "api": [
+    {
+      "name": "Bingsearch",
+      "url": "https://bingsearch-plugin.vercel.app/api/v2",
+      "description": "Bingsearch——API",
+      "parameters": {
+        "properties": {
+          "query": {
+            "description": "搜索的文本内容",
+            "type": "string"
+          }
+        },
+        "required": ["query"],
+        "type": "object"
+      }
+    }
+  ],
+  "gateway": "https://bingsearch-plugin.vercel.app/api/gateway",
+  "author": "ZWL_FineHow",
+  "createdAt": "2024-11-21",
+  "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+  "identifier": "Bingsearch-identifier",
+  "meta": {
+    "avatar": "🚀",
+    "tags": ["Bingsearch"],
+    "title": "Bing联网搜索",
+    "description": "基于bing搜索引擎的互联网搜索助手"
+  },
+  "ui": {
+    "url": "http://localhost:3400",
+    "height": 200
+  },
+  "version": "1"
+}
