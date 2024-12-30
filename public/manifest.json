@@ -28,9 +28,5 @@
     "title": "Bing联网搜索",
     "description": "基于bing搜索引擎的互联网搜索助手"
   },
-  "ui": {
-    "url": "http://localhost:3400",
-    "height": 200
-  },
   "version": "1"
 }
