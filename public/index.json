@@ -1,0 +1,63 @@
+{
+    "schemaVersion": 1,
+    "plugins": [
+        {
+            "author": "SY",
+            "createdAt": "2024-12-22",
+            "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+            "identifier": "Bingsearch-identifier",
+            "manifest": "https://bingsearch-plugin.vercel.app/manifest.json",
+            "meta": {
+                "avatar": "🚀",
+                "tags": ["Bingsearch"],
+                "title": "Bing联网搜索",
+                "description": "基于bing搜索引擎的互联网搜索助手"
+            },
+            "schemaVersion": 1
+        },
+
+        {
+            "author": "vsnthdev",
+            "createdAt": "2024-12-02",
+            "homepage": "https://github.com/vsnthdev/google-cse-lobechat",
+            "identifier": "google-cse",
+            "locale": "en-US",
+            "manifest": "https://google-cse-lobechat.vercel.app/manifest.json",
+            "meta": {
+                "avatar": "https://banner2.cleanpng.com/20180413/rfe/avfci721i.webp",
+                "tags": [
+                    "网络",
+                    "搜索"
+                ],
+                "title": "谷歌自定义搜索引擎",
+                "description": "通过他们的官方自定义搜索引擎API搜索谷歌。",
+                "category": "web-search"
+            },
+            "schemaVersion": 1
+        },
+        {
+            "author": "YoungTx",
+            "createdAt": "2024-08-09",
+            "homepage": "https://github.com/YoungTx/alps-tongyi-image",
+            "identifier": "alps-tongyi-image",
+            "locale": "en-US",
+            "manifest": "https://alps-tongyi-image.vercel.app/manifest.json",
+            "meta": {
+                "avatar": "🎉",
+                "tags": [
+                    "图像",
+                    "通义",
+                    "万象"
+                ],
+                "title": "通义万象图像生成器",
+                "description": "此插件使用阿里巴巴的通义万象模型根据文本提示生成图像。",
+                "category": "media-generate"
+            },
+            "schemaVersion": 1
+        }
+    ],
+    "tags": [
+        "search"
+      
+    ]
+}
