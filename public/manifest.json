@@ -4,7 +4,7 @@
   "identifier": "Bingsearch-identifier",
   "author": "ZWL_FineHow",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
-  "gateway": "https://bingsearch-plugin.vercel.app/api/gateway",
+  
   "meta": {
       "avatar":"🚀",
       "tags": ["Bingsearch"],
