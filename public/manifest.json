@@ -1,40 +1,35 @@
 {
-  "ui": {
-    "url": "https://bingsearch-plugin.vercel.app/index.js",
-    "mode": "module"
-  },
+  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
   "api": [
     {
-      "url": "https://bingsearch-plugin.vercel.app/api/v2",
-      "name": "query",
+      "name": "Bingsearch",
+      "url": "http://bingsearch.shangyuan.cn/api/v2",
+      "description": "Bingsearch——API",
       "parameters": {
-        "type": "object",
-        "required": [
-          "query"
-        ],
         "properties": {
           "query": {
-            "type": "string",
-            "description": "搜索的文本内容"
+            "description": "搜索的文本内容",
+            "type": "string"
           }
-        }
-      },
-      "description": "查询搜索引擎获取信息"
+        },
+        "required": ["query"],
+        "type": "object"
+      }
     }
   ],
-  "meta": {
-    "tags": [
-      "web",
-      "search"
-    ],
-    "title": "Searchbing",
-    "avatar": "🔍",
-    "description": "Query search engine to get information"
-  },
-  "author": "SY",
-  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
-  "version": "1",
+  "author": "ZWL_FineHow",
   "createdAt": "2024-11-21",
-  "homepage": "https://github.com/lobehub/chat-plugin-search-engine",
-  "identifier": "bing"
+  "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+  "identifier": "Bingsearch-identifier",
+  "meta": {
+    "avatar": "🚀",
+    "tags": ["Bingsearch"],
+    "title": "Bing联网搜索",
+    "description": "基于bing搜索引擎的互联网搜索助手"
+  },
+  "ui": {
+    "url": "http://localhost:3400",
+    "height": 200
+  },
+  "version": "1"
 }
