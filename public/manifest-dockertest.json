@@ -1,0 +1,31 @@
+{
+  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
+  "api": [
+    {
+      "name": "Bingsearch",
+      "url": "http://localhost:3000/api/v2",
+      "description": "基于bing搜索引擎的互联网搜索",
+      "parameters": {
+        "properties": {
+          "query": {
+            "description": "搜索的文本内容",
+            "type": "string"
+          }
+        },
+        "required": ["query"],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "SY",
+  "createdAt": "2024-11-21",
+  "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+  "identifier": "Bingsearch-identifier",
+  "meta": {
+    "avatar": "🚀",
+    "tags": ["web", "search"],
+    "title": "Bing联网搜索",
+    "description": "基于bing搜索引擎的互联网搜索助手"
+  },
+  "version": "1"
+}
