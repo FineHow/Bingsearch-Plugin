@@ -1,19 +1,34 @@
-import { lobeChat } from '@lobehub/chat-plugin-sdk/client';
-import { memo, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import Data from '@/components/Render';
-import { ResponseData } from '@/type';
-
-const Render = memo(() => {
-  const [data, setData] = useState<ResponseData>();
+const Render = () => {
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    lobeChat.getPluginMessage().then((e: ResponseData) => {
-      setData(e);
-    });
+    // 使用 fetch 请求加载 public/index.json 文件
+    fetch('/index.json')
+      .then((response) => response.json())
+      .then((jsonData) => {
+        setData(jsonData);  // 设置获取到的数据
+      })
+      .catch((error) => {
+        console.error('Failed to load JSON:', error);
+      });
   }, []);
 
-  return <Data {...data}></Data>;
-});
+  // 如果数据还在加载，显示加载提示
+  if (!data) {
+    return <div>正在加载中...</div>;
+  }
+
+  
+  return (
+        <div>
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        </div>
+  );
+};
 
 export default Render;
+
+
+  

@@ -1,16 +1,16 @@
 {
-  "name": "plugin-identifier",
+  "name": "bingsearch-identifier",
   "version": "1.5.1",
   "private": true,
-  "description": "This is the plugin template for LobeChat plugin development",
-  "homepage": "https://github.com/lobehub/chat-plugin-template",
-  "repository": "https://github.com/lobehub/chat-plugin-template.git",
+  "description": "This is the plugin Bingsearch for LobeChat plugin development",
+  "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
+  "repository": "https://github.com/FineHow/Bingsearch-Plugin.git",
   "workspaces": [
     "docs/*",
     "./*"
   ],
   "scripts": {
-    "build": "npm run docs:build && next build",
+    "build": "next build",
     "ci": "npm run lint && npm run type-check",
     "dev": "next dev -p 3400",
     "docs:build": "cd docs && npm run build",
@@ -18,14 +18,14 @@
     "lint": "eslint \"{src,api,docs}/**/*.{js,jsx,ts,tsx}\" --fix",
     "lint:md": "remark . --quiet --frail --output",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "prepare": "husky install",
-    "prepublishOnly": "npm run doctor && npm run build",
-    "prettier": "prettier -c --write \"**/**\"",
+    "prepublishOnly": "npm run build",
     "release": "semantic-release",
-    "start": "next start",
+    "start": " next start",
     "test": "vitest --passWithNoTests",
     "test:coverage": "vitest --coverage  --passWithNoTests",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "install:prod": "npm install --omit=dev",  
+    "install:dev": "npm install" 
   },
   "lint-staged": {
     "*.md": [
@@ -52,11 +52,6 @@
     "not ie <= 10"
   ],
   "dependencies": {
-    "@lobehub/chat-plugin-sdk": "^1",
-    "@lobehub/chat-plugins-gateway": "^1",
-    "@lobehub/ui": "latest",
-    "antd": "^5",
-    "antd-style": "^3",
     "dayjs": "^1",
     "next": "13.4.7",
     "react": "^18",
@@ -64,6 +59,12 @@
     "react-layout-kit": "^1"
   },
   "devDependencies": {
+    "@lobehub/chat-plugin-sdk": "^1",
+    "@lobehub/chat-plugins-gateway": "^1",
+    "@lobehub/ui": "latest",
+    "antd": "^5",
+    "antd-style": "^3",
+
     "@commitlint/cli": "^18",
     "@lobehub/lint": "latest",
     "@types/react": "18",

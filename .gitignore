@@ -11,6 +11,8 @@
 venv
 temp
 tmp
+.env
+.husky
 
 # dependencies
 node_modules
