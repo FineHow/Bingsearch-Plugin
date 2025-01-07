@@ -3,8 +3,8 @@
   "api": [
     {
       "name": "Bingsearch",
-      "url": "http://bingsearch.shangyuan.cn/api/v2",
-      "description": "Bingsearch——API",
+      "url": "https://bingsearch-plugin.vercel.app/api/v2",
+      "description": "基于bing搜索引擎的互联网搜索",
       "parameters": {
         "properties": {
           "query": {
@@ -26,10 +26,6 @@
     "tags": ["Bingsearch"],
     "title": "Bing联网搜索",
     "description": "基于bing搜索引擎的互联网搜索助手"
-  },
-  "ui": {
-    "url": "http://localhost:3400",
-    "height": 200
   },
   "version": "1"
 }
