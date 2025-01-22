@@ -17,6 +17,7 @@
       }
     }
   ],
+  "gateway": "https://google-cse-lobechat.vercel.app/api/gateway",
   "settings": {
     "type": "object",
     "required": ["BING_API_KEY"],
