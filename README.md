@@ -10,14 +10,7 @@
 
 This is the plugin Bingsearch for LobeChat plugin development
 
-[![][🤯-🧩-lobehub-shield]][🤯-🧩-lobehub-link]
-[![][github-contributors-shield]][github-contributors-link]
-[![][github-forks-shield]][github-forks-link]
-[![][github-stars-shield]][github-stars-link]
-[![][github-issues-shield]][github-issues-link]
-[![][github-license-shield]][github-license-link]
-
-[Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+[Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link]https://github.com/FineHow/Bingsearch-Plugin/issues · [Request Feature][github-issues-link]https://github.com/FineHow/Bingsearch-Plugin/issues
 
 ![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -33,16 +26,15 @@ This is the plugin Bingsearch for LobeChat plugin development
 - [⌨️ Local Development](#️-local-development)
 - [🤝 Contributing](#-contributing)
 
-####
-
 </details>
 
 ## 🌟 Features
 
-- [x] &#x20;💨 \*\*dev1 是基于私有化部署的 BINGSEARCH 插件方案，不仅可以部署 bingsearch, 也可根据用户需求，自主修改插件市场的内容，可以借此开发多个 lobechat 私有插件，私有化部署。
-- [x] &#x20;📚 \*\*dev1 私有化部署时请在.env 自行添加环境变量 BING_API
-- [x] &#x20;🔄 \*\* 本方案通过 docker 提供 bingsearch 私有化部署，需要使用 docker 完成打包之后，将 lobechat 中的环境变量 PLUGINS_INDEX_URL 插件市场路径替换成本项目部署的 服务器地址 /index.json (本地为<http://localhost:3400/index.json>) , 如果除了 bingsearch 插件以外还想使用官方的插件，只需要将官方的插件市场路径添加到本项目的 /index.json 中即可。
-- [x] &#x20;\*\*🖱️main 方案中是官方公用的方案，可以在 lobechat 里面设置 apikey
+1. 注册微软账号，可免费使用bing search搜索API服务，BING SEARCH 免费提供3个链接返回结果，实际可返回十个链接搜索结果。详情见[https://www.microsoft.com/en-us/bing/apis](https://www.microsoft.com/en-us/bings/apis)
+2. 本插件提供预览前端页面，点击标题 网页内嵌至插件，点击内容详情 跳转至网页。
+3. ![1737534761004](images/README/1737534761004.png)
+
+![1737534666095](images/README/1737534666095.png)
 
 <div align="right">
 
@@ -52,17 +44,19 @@ This is the plugin Bingsearch for LobeChat plugin development
 
 ## 🤯 私有化 Usage
 
-需要在私有化部署时自行添加环境变量 BING_API，开发条件下，请自行替换默认 api 即可
+> 基于私有化部署的 BINGSEARCH 插件方案，不仅可以部署 bingsearch, 也可根据用户需求，自主修改插件市场的内容，可以开发多个 lobechat 私有插件，私有化部署。
 
-1.npm install
+1. **通过 docker 提供 bingsearch 私有化部署**
+2. docker 完成打包之后，将 lobechat 中的环境变量 PLUGINS_INDEX_URL 插件市场路径替换成本项目部署的 镜像地址 /index.json (本地为[http://localhost:3400/index.json](http://localhost:3400/index.json)) , 如果除了 bingsearch 插件以外还想使用官方的插件，只需要将官方的插件市场路径添加到本项目的 /index.json 中即可。
+3. 需要在私有化部署时自行添加环境变量 BING_API，开发条件下，请自行替换默认 api 即可
 
-2.npm build
+```
+npm install
+npm build
+docker build --pull --rm -f "dockerfile" -t bingsearchplugin_local:v1.0 "."
+```
 
-3\. 使用 docker 文件进行打包 docker build --pull --rm -f "dockerfile" -t bingsearchplugin_local:v1.0 "."
-
-4\. 启动<http://localhost:3000>
-
-5\. 打开 lobechat, 添加环境变量 PLUGINS_INDEX_URL：<http://localhost:3000/index.json>
+* 启动[http://localhost:3000](http://localhost:3000), 打开 lobechat, 添加环境变量 PLUGINS_INDEX_URL：[http://localhost:3000/index.json](http://localhost:3000/index.json)
 
 [![][back-to-top]](#readme-top)
 
@@ -70,19 +64,17 @@ This is the plugin Bingsearch for LobeChat plugin development
 
 ## ⌨️ Local Development
 
-1.npm install
-
-2.npm build
-
-3.npm run dev
+```
+npm install
+npm build
+npm run dev
+```
 
 </div>
 
 ## 🤝 Contributing
 
 Contributions of all types are more than welcome, if you are interested in contributing plugin, feel free to show us what you’re made of.
-
-[![][pr-welcome-shield]][pr-welcome-link]
 
 <div align="right">
 
@@ -98,7 +90,7 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 #### 📝 License
 
-Copyright © 2023 [LobeHub][profile-url]. <br />
+Copyright © 2023 [LobeHub][profile-url]https://github.com/lobehub. <br />
 This project is [MIT](./LICENSE) licensed.
 
 <!-- LINK GROUP -->
