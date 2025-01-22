@@ -17,6 +17,10 @@
       }
     }
   ],
+  "ui": {
+    "url": "http://bingsearch-plugin.vercel.app/ui",
+    "height": 400
+  },
   "author": "ZWL_FineHow",
   "createdAt": "2024-11-21",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",

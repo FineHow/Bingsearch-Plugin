@@ -2,10 +2,10 @@ export type OrganicResults = OrganicResult[];
 
 export interface SearchItem {
   content: string;
-  // date?: string;
+  date?: string;
   // displayed_link?: string;
   link: string;
-  // source?: string;
+  source?: string;
   title: string;
 }
 
@@ -13,11 +13,12 @@ export type Result = SearchItem[];
 
 interface bingResult {
   // id: string;
+  
+  datePublished: string;
   name: string;
-  // datePublished: string;
   // datePublishedDisplayText: string;
   // isFamilyFriendly: boolean;
-  // displayUrl: string;
+  siteName: string;
   snippet: string;
   url: string;
 }

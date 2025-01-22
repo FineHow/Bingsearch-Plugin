@@ -17,6 +17,10 @@
       }
     }
   ],
+  "ui": {
+    "url": "http://localhost:3000/ui",
+    "height": 400
+  },
   "author": "SY",
   "createdAt": "2024-11-21",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
