@@ -23,7 +23,7 @@
     "properties": {
       "BING_API_KEY": {
         "title": "Bingsearch API Key",
-        "description": "we use [Bingsearch](https://serpapi.com) as backend service | 该插件使用 Bingsearchapi 作为搜索服务",
+        "description": "we use [Bingsearch](https://www.microsoft.com/en-us/bing/apis) as backend service | 该插件使用 Bingsearchapi 作为搜索服务",
         "type": "string",
         "minLength": 32,
         "maxLength": 32,
