@@ -32,17 +32,17 @@
     }
   },
   "ui": {
-    "url": "http://bingsearch-plugin.vercel.app/ui",
+    "url": "https://bingsearch-plugin.vercel.app/ui",
     "height": 400
   },
   "author": "ZWL_FineHow",
   "createdAt": "2024-11-21",
   "homepage": "https://github.com/FineHow/Bingsearch-Plugin",
-  "identifier": "Bingsearch-identifier",
+  "identifier": "Bingsea",
   "meta": {
     "avatar": "🚀",
     "tags": ["Bingsearch"],
-    "title": "Bing联网搜索",
+    "title": "Bing联网搜777索",
     "description": "基于bing搜索引擎的互联网搜索助手"
   },
   "version": "1"
